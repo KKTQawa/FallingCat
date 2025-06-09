@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x843d;&#x4f53;&#x732b;&#x8fd0;&#x52a8;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="落体猫运动">落体猫运动</h1>
+<h2 id="运行">运行</h2>
+<p><strong>方法一</strong>:双击run.bat。（不支持调试）</p>
+<p><strong>方法二</strong>:（不支持调试）</p>
+<ul>
+<li>进入src目录下</li>
+<li>cmd运行<code>mycat\Scripts\activate</code></li>
+<li>运行主文件<code>python DroppingCat.py</code></li>
+</ul>
+<p><strong>方法三</strong>：</p>
+<ul>
+<li>使用vscode或者pycharm等IDE打开src选择python环境mycat，<a href="http://xn--DroppingCat-zs3sh641abt5cttxa.py">然后运行DroppingCat.py</a></li>
+</ul>
+<h2 id="操作">操作</h2>
+<ul>
+<li><span style="color:red;">F/J/B/N</span>  前进/后退/上/下</li>
+<li><span style="color:red;">Q/E/A/D</span> 下旋/上仰/左转/右转</li>
+<li><span style="color:red;">W/G/V/</span>其他功能</li>
+<li><span style="color:red;">空格键</span> 暂停/继续</li>
+<li><span style="color:red;">R</span> 重置摄像视角</li>
+<li>鼠标强制拖动(不推荐)</li>
+<li><span style="color:red;">RESET_Height</span> 每次猫重置后的高度</li>
+<li><span style="color:red;">Max_Velocity</span> 猫的速度超过此值系统自动结束</li>
+<li><span style="color:red;">Begin_Collision</span> 允许猫落地(用于生成一次报告，获取反冲力)（划到右侧开启）</li>
+<li><span style="color:red;">Auto_Collision</span> 开启随机动画（划到右侧开启）</li>
+<li><span style="color:red;">Quit</span> 退出</li>
+</ul>
+<h2 id="功能">功能</h2>
+<ol>
+<li>实时调整猫的各个关节（合理范围内）</li>
+<li>进行随机动画</li>
+<li>支持输入图表时间轴长度</li>
+<li>实时显示猫下落过程的线速度、角速度，多方向(x/y/z/角速度方向)转动惯量评估旋转状态)</li>
+<li>支持实时调试、暂停、设置重置高度</li>
+<li>支持每次正式测试计算落地冲力，并生成报告</li>
+<li>由于python性能低下，<strong>不支持实时录制和截图</strong>(否则卡成ppt,Recorder.py已经停用)， 但是绘图结果支持<span style="color:red;">手动截图</span>保存(窗口左下角)，与<span style="color:red;">手动录制</span>(提供软件包)进行时间上的校对，便可查看特定时间点猫的姿态</li>
+</ol>
+<h2 id="项目说明">项目说明</h2>
+<h3 id="主要第三方库">主要第三方库</h3>
+<ul>
+<li>pybullet 充当物理引擎和进行GUI窗口实时渲染</li>
+<li>matplotlib 绘图</li>
+<li>noise 用于随机动画算法</li>
+</ul>
+<h3 id="猫的结构">猫的结构</h3>
+<p align="center">
+  <img src="file:///e:\my\FallingCat\python\resources\cat_structure.png" width="400" alt="落体猫示意图" >
+</p>
+<p><strong>其中</strong>:</p>
+<ul>
+<li>F/B/L/R: 前后左右</li>
+<li>toe是固定关节，不可调整;Base_Link是身体，也不可调节</li>
+<li>长/宽/高:0.3m/0.15m/0.2m(粗略值)</li>
+<li>关节质量：0.1~0.4kg;身体质量:3kg。</li>
+</ul>
+
+            
+            
+        </body>
+        </html>
